@@ -55,7 +55,7 @@
     <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.541</jenkins.baseline>
-    <jenkins.version>${jenkins.baseline}.1</jenkins.version>
+    <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <!-- TODO: Bump when introducing breaking changes, e.g. fixing https://github.com/jenkinsci/github-autostatus-plugin/issues/176 -->
     <hpi.compatibleSinceVersion>3.0</hpi.compatibleSinceVersion>
     <jenkins.bom.version>6751.v745d6a_31066a_</jenkins.bom.version>
