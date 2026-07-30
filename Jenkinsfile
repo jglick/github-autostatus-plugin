@@ -19,6 +19,6 @@ buildPlugin(
 
     // Test the bleeding edge of the compatibility spectrum (i.e., the latest supported Java runtime).
     // see also https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/
-    [ platform: 'linux', jdk: '25', jenkins: '2.541.1' ],
+    [ platform: 'linux', jdk: '25', jenkins: '2.568.1' ],
   ]
 )
