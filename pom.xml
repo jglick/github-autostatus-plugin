@@ -71,6 +71,7 @@
     <hpi.bundledArtifacts>java-dogstatsd-client</hpi.bundledArtifacts>
     <dogstatsd.version>4.4.5</dogstatsd.version>
     <system-stubs.version>2.1.8</system-stubs.version>
+    <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
   </properties>
 
   <dependencyManagement>
@@ -86,6 +87,10 @@
   </dependencyManagement>
 
   <dependencies>
+    <dependency>
+      <groupId>io.jenkins.plugins</groupId>
+      <artifactId>commons-lang3-api</artifactId>
+    </dependency>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>gson-api</artifactId>
