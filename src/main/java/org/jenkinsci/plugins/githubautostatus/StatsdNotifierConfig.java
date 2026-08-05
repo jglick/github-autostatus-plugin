@@ -24,7 +24,7 @@
 package org.jenkinsci.plugins.githubautostatus;
 
 import java.util.logging.Logger;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Class for StatsD configuration notifier.
