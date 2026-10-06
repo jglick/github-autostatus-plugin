@@ -23,6 +23,7 @@
  */
 package org.jenkinsci.plugins.githubautostatus;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.ExtensionList;
 import hudson.model.InvisibleAction;
 import hudson.model.JobProperty;
@@ -58,6 +59,11 @@ public class BuildStatusAction extends InvisibleAction implements Serializable {
     private String repoOwner;
     private String repoName;
     private String branchName;
+
+    @SuppressFBWarnings(
+            value = "SE_TRANSIENT_FIELD_NOT_RESTORED",
+            justification =
+                    "TODO https://github.com/jenkinsci/github-autostatus-plugin/pull/181#discussion_r4104755141")
     private transient Run<?, ?> run;
     // Only modified from the constructor, so not synchronized in other code
     private final Map<String, Object> jobParameters;
